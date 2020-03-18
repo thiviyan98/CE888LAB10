@@ -45,18 +45,44 @@ div {
 
   <form method="POST">
   <form action="/action_page.php">
-    <label for="price"></label>
-    <input type="number" id="price" name="price" placeholder="Price (between 38 and 1027)" min="38" max="1027" step="0.1" required size="35">
+    <label for="age"></label>
+    <input type="number" id="age" name="age" placeholder="age (between 0 and 100)" min="0" max="100" step="0.1" required size="35">
 
-    <label for="Tax"></label>
-    <input type="number" id="Tax" name="Tax" placeholder="Tax (between 2 or 103)" min="2" max="103" step="0.1" required size="35">
+    <label for="sex"></label>
+    <input type="number" id="sex" name="sex" placeholder="sex (between male 1 or 0 female)" min="0" max="1" step="0.1" required size="35">
 
-    <label for="Driver_Age"></label>
-    <input type="number" id="Driver_Age" name="Driver_Age" placeholder="Driver Age (between 18 and 74)" min="18" max="74" required>
+    <label for="Chess pain type"></label>
+    <input type="number" id="Chess pain type" name="Chess pain type" placeholder="Chess pain type (between 0 and 3)" min="0" max="3" required>
 
-    <label for="Licence_Length_Years"></label>
-    <input type="number" id="Licence_Length_Years" name="Licence_Length_Years" placeholder="Licence Length in Years (between 0 and 16.5)" min="-0.3" max="16.5" step="0.1" required>
-
+    <label for="resting blood pressure"></label>
+    <input type="number" id="resting blood pressure" name="resting blood pressure" placeholder="resting blood pressure (between 94 and 200)" min="94" max="200" step="0.1" required>
+	
+	<label for="serum cholestoral in mg/dl"></label>
+    <input type="number" id="serum cholestoral in mg/dl" name="serum cholestoral in mg/dl" placeholder="serum cholestoral in mg/dl (between 126 and 564)" min="126" max="564" step="0.1" required>
+	
+	<label for="fasting blood sugar > 120 mg/dl"></label>
+    <input type="number" id="fasting blood sugar > 120 mg/dl" name="fasting blood sugar > 120 mg/dl" placeholder="fasting blood sugar > 120 mg/dl (between 0 and 1)" min="0" max="1" step="0.1" required>
+	
+	<label for="resting electrocardiographic results (values 0,1,2)"></label>
+    <input type="number" id="resting electrocardiographic results (values 0,1,2)" name="resting electrocardiographic results (values 0,1,2)" placeholder="resting electrocardiographic results (values 0,1,2)" min="0" max="2" step="0.1" required>
+	
+	<label for="maximum heart rate achieved"></label>
+    <input type="number" id="maximum heart rate achieved" name="maximum heart rate achieved" placeholder="maximum heart rate achieved (between 71 and 202)" min="71" max="202" step="0.1" required>
+	
+	<label for="exercise induced angina"></label>
+    <input type="number" id="exercise induced angina" name="exercise induced angina" placeholder="exercise induced angina (between 0 or 1)" min="0" max="1" step="0.1" required>
+	
+	<label for="oldpeak = ST depression induced by exercise relative to rest"></label>
+    <input type="number" id="oldpeak = ST depression induced by exercise relative to rest" name="oldpeak = ST depression induced by exercise relative to rest" placeholder="oldpeak = ST depression induced by exercise relative to rest (between 0 and 10)" min="0" max="10" step="0.1" required>
+	
+	<label for="number of major vessels"></label>
+    <input type="number" id="number of major vessels" name="number of major vessels" placeholder="number of major vessels (between 0 and 3)" min="0" max="3" step="0.1" required>
+	
+	<label for="thal: 3 = normal; 6 = fixed defect; 7 = reversable defect"></label>
+    <input type="number" id="thal: 3 = normal; 6 = fixed defect; 7 = reversable defect" name="thal: 3 = normal; 6 = fixed defect; 7 = reversable defect" placeholder="thal: 3 = normal; 6 = fixed defect; 7 = reversable defect" min="3" max="7" step="0.1" required>
+	
+	<label for="target"></label>
+    <input type="number" id="target" name="target" placeholder="target (between 0 or 1)" min="0" max="1" step="0.1" required>
     <select name="req_model">
     <option value="Logistic">Logistic Regression</option>
     <option value="RandomForest">Random Forest</option>
